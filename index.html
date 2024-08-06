@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Encodage  -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
+  <link href="https://fonts.google.com/specimen/Outfit" rel="stylesheet">
+  
+  <title>Frontend Mentor | Recipe page</title>
+
+  <!-- Stylesheet  -->
+  <style>
+    body{background-color: hsl(30, 54%, 90%); display: flex; justify-content: center; flex-direction: row;
+    font-family: 'Outfit'; font-size: 16px;}
+
+    /* bloc blanc */
+    .bloc{height: auto; width: 50%; background-color: hsl(0, 0%, 100%); 
+          border-radius: 20px;
+          font-family: 'Outfit'; font-size: 16px;}
+
+    .textes{height: auto; width: 85%; 
+          padding: 2%;
+          margin: 0 5% 5% 5%;
+          font-family: 'Outfit'; font-size: 16px;}
+
+    /* image du bloc */
+    .imgbloc{ margin-top: 5%; width: 100%; display: flex; justify-content: center;}
+     img{  border-radius: 10px; width: 90%;}
+
+    /* Titres */
+    h1{ font-family: 'Young Serif', serif;
+        font-size: xx-large;
+        font-weight: 400;
+        color: hsl(24, 5%, 18%);}
+    h2{ font-family:'Young Serif', serif;
+        color: hsl(14, 45%, 36%);
+        font-size: x-large;
+        font-weight: 400;}
+    h3{color: hsl(332, 51%, 32%); margin-left: 10px;}
+   
+    /* preparation part */
+    .preparation {
+        background-color: hsl(330, 100%, 98%);
+        padding: 5px 10px 5px 10px; 
+        border-radius: 5px; }
+    .preparation ul li{ color: hsl(24, 5%, 18%); margin-bottom: 10px; }
+
+    /* ingredients part */
+    .ingredients ul {
+        color: hsl(30, 10%, 34%);
+        list-style-position: inside; 
+        padding-left: 0;
+        margin-left: 0; }
+    .ingredients ul li{margin-bottom: 10px; text-indent: -25px; padding-left: 35px;}
+    ul li::marker{color: hsl(14, 45%, 36%); }
+
+    /* instructions part */
+    .instructions ol {
+        list-style-position: inside; 
+        padding-left: 0;
+        margin-left: 0; 
+        color: hsl(30, 10%, 34%);}
+    .instructions ol li {
+        text-indent: -15px;
+        padding-left: 20px;}
+    ol li::marker{color: hsl(14, 45%, 36%); margin-right: 30px; padding-right: 20px;}
+
+    /* Nutrition part */
+    p{color: hsl(30, 10%, 34%);}
+
+    /* Paramètres du tableau */
+    table {
+      border-collapse: collapse;
+     
+      font-family: sans-serif;
+      font-size: 0.8rem;
+      letter-spacing: 1px; 
+      height: auto;
+      width: 100%;}
+
+    th,td {
+      border-bottom: 1px solid rgb(160 160 160);
+      padding: 8px 10px; 
+      text-align: start;
+      }
+    
+    th{ color: hsl(14, 45%, 36%); font-weight: 800;}
+    td{color: hsl(30, 10%, 34%);}
+
+    .end{border: none;}
+    
+    .featurette-divider{ height: 0,5px;}
+
+    /* Filigrane du bas */
+    .attribution { font-size: 11px; text-align: center; margin-top: 20px; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  
+    /* Responsive part */
+     @media all and (max-width: 1000px) {
+      .bloc{height: auto; width: 70%; } } 
+
+    @media all and (max-width: 375px) {
+    
+      /* bloc blanc */
+      body{ margin: 0; padding: 0; }
+      .bloc{height: auto; width: 100%;padding: 0; margin: 0; border-radius: 0;}
+
+      /* image du bloc */
+      .imgbloc{ margin: 0; }
+      img{  border-radius: 0; width: 100%;}
+    
+
+      }
+  </style>
+</head>
+
+<!-- Page en elle même  -->
+<body>
+<Section class="bloc">
+    <div class="imgbloc">
+      <img src="./assets/images/image-omelette.jpeg" height="auto" width="100%" alt="#"  >
+    </div>
+  <div class="textes">
+    <h1>Simple Omelette Recipe </h1>
+    <p>An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
+    to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p><br>
+
+    <div class="preparation">
+      <h3>Preparation time</h3>
+      <ul>
+          <li> <b>Total:</b> Approximately 10 minutes</li>
+          <li> <b>Preparation:</b> 5 minutes</li>
+          <li> <b>Cooking:</b> 5 minutes</li>
+      </ul>
+    </div>
+
+    <div class="ingredients">
+      <ul>
+          <h2>Ingredients</h2>
+          <li>2-3 large eggs</li>
+          <li>Salt, to taste</li>
+          <li>Pepper, to taste</li>
+          <li>1 tablespoon of butter or oil</li>
+          <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
+        </ul>
+    </div>
+    <hr class="featurette-divider">
+
+    <div class="instructions">
+      <h2>Instructions</h2>
+      <ol>
+          <li> <b>Beat the eggs:</b> In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
+            You can add a tablespoon of water or milk for a fluffier texture.</li><br>
+          <li><b>Heat the pan:</b> Place a non-stick frying pan over medium heat and add butter or oil.</li><br>
+          <li><b>Cook the omelette:</b> Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure 
+            the eggs evenly coat the surface.</li><br>
+          <li> <b>Add fillings (optional):</b> When the eggs begin to set at the edges but are still slightly runny in the 
+            middle, sprinkle your chosen fillings over one half of the omelette.</li><br>
+          <li><b>Fold and serve: </b>As the omelette continues to cook, carefully lift one edge and fold it over the 
+            fillings. Let it cook for another minute, then slide it onto a plate.
+          </li><br>
+          <li><b>Enjoy:</b> Serve hot, with additional salt and pepper if needed.</li><br>
+      </ol>
+    </div>
+    <hr class="featurette-divider">
+
+  <div class="nutrition">
+    <h2>Nutrition</h2>
+    <p>The table below shows nutritional values per serving without the additional fillings.</p>
+        <table>
+            <thead>
+              <tr>
+                <td> Calories</td>
+                <th>277kcal</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr>
+                  <td>Carbs</td>
+                  <th> 0g</th>
+                </tr>
+                <tr>
+                  <td>Protein</td>
+                  <th>20g</th>
+                </tr>
+                <tr>
+                  <td class="end">Fat</td>
+                  <th class="end">22g</th>
+                </tr>
+            </tbody>
+        </table>
+  </div>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Irène Ng</a>.
+    </div>
+  </div>
+</Section>
+
+</body>
+</html>
